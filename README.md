@@ -19,7 +19,16 @@ somafm_pls2m3u.py -new *.pls > all.m3u
 
 and open `all.m3u` in [Rhythmbox][rhythmbox] or save it as the [MOC][moc] playlist. You can also omit the `-new` in order to append to a [MOC][moc] playlist.
 
+For separate m3u's readable by [MPD][mpd], just run
+
+```bash
+somafm_convert_pls.sh *.pls
+```
+
+once you've downloaded playlists via `somafm_download_playlists.sh`.
+
 
 
 [rhythmbox]: https://en.wikipedia.org/wiki/Rhythmbox
 [moc]: https://en.wikipedia.org/wiki/Music_on_Console
+[mpd]: https://en.wikipedia.org/wiki/Music_Player_Daemon
